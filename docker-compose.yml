@@ -6,6 +6,9 @@ services:
       - "8080:80"
     environment:
       - WORDPRESS_DB_PASSWORD=temp
+      - SHELL=/bin/bash
+    volumes:
+      - ./app:/var/www/html
 
   mysql:
     image: mariadb
