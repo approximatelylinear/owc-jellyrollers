@@ -16,10 +16,11 @@
 
 [TODO: How do users use this?]
 
-###<a name="external"></a> External Dependencies
+<a name="external"></a>  
+### External Dependencies
 
 **Wordpress Plugins**  
-*Name*:
+*Name*:  
 *URL*:  
 *Purpose*:  
 *Implementation/Configuration*:  
