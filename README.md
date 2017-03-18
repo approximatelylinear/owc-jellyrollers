@@ -16,9 +16,13 @@
 
 [TODO: How do users use this?]
 
-### External Dependencies
+###<a name="external"></a> External Dependencies
 
-[TODO: List our external dependencies]
+**Wordpress Plugins**  
+*Name*:
+*URL*:  
+*Purpose*:  
+*Implementation/Configuration*:  
 
 ## Reference implementation
 
@@ -46,7 +50,8 @@
 
 ## For developers
 
-[TODO: How do you develop on this repo?]
+**To submit a plugin for deployment:**  
+Create a feature branch with your ticket number and plugin name (`/feature/45/SimpleGallery`). Add your plugin to the list in [External Dependencies](#external). Be sure to include your implementation and configuration details (how did you set it up?). Create a pull request on that branch.  The *only* change on this plugin deployment branch should be the README updates.
 
 ### Deployment
 
