@@ -15,8 +15,14 @@ services:
       # set DB password for wordpress
       - WORDPRESS_DB_PASSWORD=temp
       - SHELL=/bin/bash
+    # mounted volumes
     volumes:
+      # map host path ./app to guest path /var/www/html
       - ./app:/var/www/html
+    # set container dependencies (startup order)
+    depends_on:
+      # depends on mysql container being available before initializing
+      - mysql
 
   # mysql container
   mysql:
