@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('WOFF/SourceSansPro-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('WOFF/SourceSansPro-Bold.woff') format('woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('WOFF/SourceSansPro-It.woff') format('woff');
+  font-style: italic;
+}
