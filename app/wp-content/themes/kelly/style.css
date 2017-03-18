@@ -146,7 +146,8 @@ textarea {
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
-	font-weight: 900;
+	font-family: 'Factoria', sans-serif;
+	font-weight: 700;
 	margin: .75em 0;
 	text-align: center;
 }
@@ -1009,7 +1010,7 @@ td#next {
 	z-index: 2;
 }
 .site-title {
-	font-family: 'Factoria-Bold', sans-serif;
+	font-family: 'Factoria', sans-serif;
 	font-size: 2.625em;
 	font-weight: 500;
 	line-height: 1.25;
