@@ -25,6 +25,7 @@ and Blueprint http://www.blueprintcss.org/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
+0.0 - Imports
 1.0 - Reset
 2.0 - Global
 3.0 - Menu
@@ -40,6 +41,12 @@ and Blueprint http://www.blueprintcss.org/
 13.0 - Galleries
 14.0 - Media Queries
 --------------------------------------------------------------*/
+
+/* 0.0 - Imports
+-------------------------------------------------------------- */
+
+@import url('fonts/factoria/factoria.css');
+@import url('fonts/source-sans-pro/source-sans-pro.css');
 
 
 /* 1.0 - Reset
@@ -123,9 +130,6 @@ a img {
 
 /* 2.0 Global
 ----------------------------------------------- */
-
-@import url('fonts/factoria/factoria.css');
-@import url('fonts/source-sans-pro/source-sans-pro.css');
 
 body,
 button,
