@@ -36,3 +36,5 @@ services:
     volumes:
       # map host path ./db to guest path /var/lib/mysql
       - ./db:/var/lib/mysql
+    ports:
+      - "3306:3306"
