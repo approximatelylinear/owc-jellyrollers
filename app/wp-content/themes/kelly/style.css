@@ -973,6 +973,11 @@ td#next {
 	text-align: right;
 }
 
+/* Pages widget in the footer */
+.widget.widget_pages .widget-title {
+	display: none;
+}
+
 
 /* 10.0 - Infinite Scroll
 ----------------------------------------------- */
@@ -1090,7 +1095,7 @@ td#next {
 .site-footer {
 	background: #262626;
 	color: #1d3037;
-	font-size: .8125em;
+	font-size: .9em;
 	font-style: italic;
 	padding: 0 1.5em;
 	text-align: center;
@@ -1101,7 +1106,8 @@ td#next {
 }
 .site-footer a,
 .site-info {
-	color: #9da7b4;
+	color: #fff;
+	text-align: left;
 }
 .site-footer .sep {
 	clear: both;

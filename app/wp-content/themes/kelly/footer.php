@@ -12,10 +12,7 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<?php do_action( 'kelly_credits' ); ?>
-			<a href="http://wordpress.org/" rel="generator"><?php printf( __( 'Proudly powered by %s', 'kelly' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'kelly' ), 'Kelly', '<a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>' ); ?>
+			Copyright &copy; 2017 CBCC
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
