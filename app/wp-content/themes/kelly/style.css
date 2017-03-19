@@ -525,33 +525,36 @@ a:active {
 	.main-navigation.toggled .nav-menu {
 		display: block;
 	}
-	.menu-toggle {
-		color: #fff;
-		font-size: 1.25em;
-		margin: 0;
-		padding: 0.375em 0;
-		position: relative;
+	.main-navigation .menu-toggle {
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 15px 10px;
 		z-index: 2;
-		max-width: 50px;
 		height: 60px;
 	}
 	.menu-toggle img {
-		height: 28px;
-		width: 23px;
+		height: 30px;
 	}
-	.active-hamburger {
+	.main-navigation.toggled .inactive-hamburger {
+		display: none;
+	}
+	.main-navigation:not(.toggled) .active-hamburger {
 		display: none;
 	}
 	.main-navigation ul {
 		display: none;
 	}
-	.nav-menu li:after {
-	  content:"";
-	  background: black;
-	  position: absolute;
-	  left: 7%;
-	  width: 86%;
-	  height: 1px;
+	.nav-menu {
+		margin-top: 60px;
+		background-color: #2f2f2f;
+		padding: 0 .5em;
+	}
+	.nav-menu li {
+	  padding: .5em 0;
+	}
+	.nav-menu li:not(:first-child) {
+		border-top: 1px solid #191919;
 	}
 }
 
