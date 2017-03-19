@@ -24,3 +24,8 @@
 
 </body>
 </html>
+
+<?php if (is_page('donate')): ?>
+	<script type="text/javascript" src="https://js.squareup.com/v2/paymentform"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/js/sq-donation.js" charset="utf-8"></script>
+<?php endif; ?>
