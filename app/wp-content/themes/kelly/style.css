@@ -1212,6 +1212,10 @@ td#next {
 	.widget-areas .widget-area:nth-child(3):nth-last-child(1):last-of-type {
 		margin-right: 0;
 	}
+	.widget_pages li {
+		display: inline-block;
+		margin: 0 10px;
+	}
 	.main-navigation {
 		text-align: center;
 	}
