@@ -34,7 +34,8 @@
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<a class="menu-toggle">
-				<img src="<?php echo get_theme_file_uri( 'images/menu-button.svg' ); ?>" alt="Menu" />
+				<img class="inactive-hamburger" src="<?php echo get_theme_file_uri( 'images/menu-button.svg' ); ?>" alt="Menu" />
+				<img class="active-hamburger" src="<?php echo get_theme_file_uri( 'images/menu-button-active.svg' ); ?>" alt="Menu" />
 			</a>
 			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'kelly' ); ?></a>
 

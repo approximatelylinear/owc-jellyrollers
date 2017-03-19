@@ -27,7 +27,6 @@
 
 	button.onclick = function() {
 		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
-			console.log("Clicky");
 			container.className = container.className.replace( ' toggled', '' );
 		} else {
 			container.className += ' toggled';
