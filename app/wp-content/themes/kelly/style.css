@@ -531,7 +531,8 @@ a:active {
 	height: 60px;
 }
 .menu-toggle,
-.main-navigation.toggled .nav-menu {
+.main-navigation.toggled .nav-menu,
+.main-navigation.toggled .menu {
 	display: block;
 }
 .main-navigation .menu-toggle {
@@ -546,15 +547,18 @@ a:active {
 	height: 30px;
 }
 
-.nav-menu {
+.nav-menu,
+.menu {
 	margin-top: 60px;
 	background-color: #2f2f2f;
 	padding: 0 .5em;
 }
-.nav-menu li {
+.nav-menu li,
+.menu li {
 	padding: .5em 0;
 }
-.nav-menu li:not(:first-child) {
+.nav-menu li:not(:first-child),
+.menu li:not(:first-child) {
 	border-top: 1px solid #191919;
 }
 
@@ -1226,16 +1230,19 @@ td#next {
 		display: block;
 		padding: 0;
 	}
-	.nav-menu {
+	.nav-menu,
+	.menu {
 		margin-top: 90px;
 		background-color: #fff;
 	}
-	.nav-menu li {
+	.nav-menu li,
+	.menu li {
 		text-transform: uppercase;
 		font-size: 1.2em;
 		padding: 0;
 	}
-	.nav-menu li:not(:first-child) {
+	.nav-menu li:not(:first-child),
+	.menu li:not(:first-child) {
 		border-top: 0;
 	}
 	.main-navigation li {
