@@ -181,8 +181,12 @@ function kelly_admin_scripts( $hook_suffix ) {
 add_action( 'admin_print_styles-appearance_page_custom-header', 'kelly_admin_scripts' );
 
 add_shortcode('donate_button', 'donate_button');
-function donate_button() {
-	echo '<a href="https://squareup.com/store/chicago-baseball-cancer-charity" target="_blank"><button>Donate</button></a>';
+function donate_button($attr) {
+	extract(shortcode_atts(array(
+        'label' => 'Donate',
+    ), $attr));
+
+	return '<a href="https://squareup.com/store/chicago-baseball-cancer-charity" target="_blank"><button>'.$label.'</button></a>';
 }
 
 /**
