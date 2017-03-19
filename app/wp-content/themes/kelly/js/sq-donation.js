@@ -27,9 +27,11 @@ var paymentForm = new SqPaymentForm({
 
     cardNonceResponseReceived: function(errors, nonce, cardData) {
       if (errors) {
-          errors.forEach(function(error) {
-            jQuery('#donation_errors').append(error.message + '<br>');
-          });
+          clearErrors(function() {
+            errors.forEach(function(error) {
+              outputError(error.message);
+            });
+          })
       } else {
         jQuery('#donation_form').hide(function() {
           jQuery('#donation_success').show();
@@ -38,19 +40,23 @@ var paymentForm = new SqPaymentForm({
     },
 
     unsupportedBrowserDetected: function() {
-      // Fill in this callback to alert buyers when their browser is not supported.
+      clearErrors(function() {
+        outputError('Your browser is not supported.')
+      })
     }
   }
 });
 
-// This function is called when a buyer clicks the Submit button on the webpage
-// to charge their card.
+function outputError(error) {
+  jQuery('#donation_errors').append(error + '<br>');
+}
+
+function clearErrors(callback) {
+  jQuery('#donation_errors').text('');
+  callback();
+}
+
 function requestCardNonce(event) {
-
-  // This prevents the Submit button from submitting its associated form.
-  // Instead, clicking the Submit button should tell the SqPaymentForm to generate
-  // a card nonce, which the next line does.
   event.preventDefault();
-
   paymentForm.requestCardNonce();
 }
