@@ -565,8 +565,6 @@ a:active {
 .site-content {
 	padding-top: 1.5em;
 }
-.sticky {
-}
 .hentry {
 	background: #fff;
 	margin: 0 0 1.5em;
@@ -588,6 +586,7 @@ a:active {
 }
 .entry-title .title-overlay {
 	padding: 2em 0;
+	background-color: #51AAAC;
 	background-color: rgba(81, 170, 172, .75); /* #51AAAC with some opacity */
 }
 .entry-title .title-overlay > span {
@@ -760,8 +759,6 @@ footer.entry-meta .comments-link {
 .site-main .gallery {
 	margin-bottom: 1.5em;
 }
-.gallery-caption {
-}
 .site-main .gallery a img {
 	border: none;
 	height: auto;
@@ -769,10 +766,6 @@ footer.entry-meta .comments-link {
 }
 .site-main .gallery dd {
 	margin: 0;
-}
-.site-main .gallery-columns-4 .gallery-item {
-}
-.site-main .gallery-columns-4 .gallery-item img {
 }
 
 /* Make sure embeds and iframes fit their containers */
@@ -808,7 +801,6 @@ object {
 /* 8.0 - Comments
 ----------------------------------------------- */
 
-.bypostauthor {}
 .comment-content a {
 	word-wrap: break-word;
 }
@@ -875,7 +867,7 @@ object {
 	font-style: italic;
 	text-align: center;
 }
-#respond h3 {
+.comment-respond {
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -1164,7 +1156,7 @@ td#next {
 
 /* 14.0 - Media Queries
 ----------------------------------------------- */
-@media screen and ( min-width: 750px ) {
+@media screen and (min-width: 750px) {
 	.site-branding,
 	.menu,
 	.site-info,
@@ -1340,7 +1332,7 @@ td#next {
 		font-size: 24px;
 	}
 }
-@media screen and ( min-width: 1250px ) {
+@media screen and (min-width: 1250px) {
 	.site-branding,
 	.menu,
 	.site-info,
