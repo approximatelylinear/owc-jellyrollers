@@ -12,7 +12,7 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			Copyright &copy; 2017 CBCC
+			Copyright &copy; <?php echo date("Y"); ?> CBCC
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
