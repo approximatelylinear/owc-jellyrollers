@@ -604,8 +604,8 @@ a:active {
 	color: #ffffff;
 	-ms-transform-origin: center center;
 	    transform-origin: center center;
-	-ms-transform: rotate(-1.5deg);
-	    transform: rotate(-1.5deg);
+	-ms-transform: rotate(-3deg);
+	    transform: rotate(-3deg);
 }
 
 .entry-title a,
@@ -1316,7 +1316,7 @@ td#next {
 	}
 	.entry-title,
 	.page-title {
-		font-size: 1.9em;
+		font-size: 2.25em;
 	}
 	footer.entry-meta span {
 		clear: none;
