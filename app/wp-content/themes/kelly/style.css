@@ -899,6 +899,9 @@ object {
 	overflow: hidden;
 	padding: 1.5em;
 }
+.widget:not(:first-child) {
+	border-top: 1px solid #ffffff;
+}
 .widget a {
 	font-weight: 700;
 	color: #ffffff;
@@ -1204,7 +1207,7 @@ td#next {
 	.widget-areas .widget-area:nth-child(3):nth-last-child(1):last-of-type {
 		margin-right: 0;
 	}
-	.widget_pages li {
+	.widget li {
 		display: inline-block;
 		margin: 0 10px;
 	}
