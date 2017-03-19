@@ -8,16 +8,20 @@ $format = get_post_format();
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php if ( has_post_thumbnail() ) : ?>
-		<div class="entry-image">
-			<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail( 'kelly-featured-image' ); ?></a>
-		</div>
-	<?php endif; ?>
 	<header class="entry-header">
 		<?php if ( 'link' == $format ) : ?>
 			<?php the_title( '<h1 class="entry-title"><a href="' . esc_url( kelly_get_link_url() ) . '" rel="bookmark">', '</a></h1>' ); ?>
 		<?php else : ?>
-			<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+			<h1
+				class="entry-title"
+				style="<?php echo has_post_thumbnail() ? 'background-image: url(' . get_the_post_thumbnail_url() . ');' : '' ?>"
+			>
+				<a href="<?php the_permalink(); ?>" rel="bookmark">
+					<div class="title-overlay">
+						<span><?php the_title(); ?></span>
+					</div>
+				</a>
+			</h1>
 		<?php endif; ?>
 
 		<?php if ( 'post' == get_post_type() ) : ?>

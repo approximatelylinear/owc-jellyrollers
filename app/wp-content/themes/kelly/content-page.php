@@ -6,14 +6,20 @@
  */
 ?>
 
+<?php
+
+?>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php if ( has_post_thumbnail() ) : ?>
-		<div class="entry-image">
-			<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail( 'kelly-featured-image' ); ?></a>
-		</div>
-	<?php endif; ?>
 	<header class="entry-header">
-		<h1 class="entry-title"><?php the_title(); ?></h1>
+		<h1
+			class="entry-title"
+			style="<?php echo has_post_thumbnail() ? 'background-image: url(' . get_the_post_thumbnail_url() . ');' : '' ?>"
+		>
+			<div class="title-overlay">
+				<span><?php the_title(); ?></span>
+			</div>
+		</h1>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">

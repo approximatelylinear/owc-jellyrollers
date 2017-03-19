@@ -557,11 +557,25 @@ a:active {
 .page-title {
 	margin: 0;
 	text-transform: uppercase;
+}
+
+.has-post-thumbnail .entry-title {
+	background-position: center center;
+	background-size: cover;
+}
+.has-post-thumbnail .entry-title .title-overlay {
+	padding: 2em 0;
+	background-color: rgba(81, 170, 172, .75); /* #51AAAC with some opacity */
+}
+.has-post-thumbnail .entry-title .title-overlay > span {
+	display: block;
+	color: #ffffff;
 	-ms-transform-origin: center center;
 	    transform-origin: center center;
 	-ms-transform: rotate(-1.5deg);
 	    transform: rotate(-1.5deg);
 }
+
 .entry-title a,
 .entry-title a:visited,
 footer.entry-meta .comments-link a,
