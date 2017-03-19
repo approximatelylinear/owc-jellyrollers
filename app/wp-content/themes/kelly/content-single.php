@@ -17,7 +17,7 @@ $format = get_post_format();
 				style="<?php echo has_post_thumbnail() ? 'background-image: url(' . get_the_post_thumbnail_url() . ');' : '' ?>"
 			>
 				<div class="title-overlay">
-					<span><?php the_title(); ?></span>
+					<span><?php echo (get_post_meta(get_the_ID(), 'header_text', true) ?: get_the_title()); ?></span>
 				</div>
 			</h1>
 		<?php endif; ?>

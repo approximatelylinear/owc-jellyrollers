@@ -18,7 +18,7 @@ $format = get_post_format();
 			>
 				<a href="<?php the_permalink(); ?>" rel="bookmark">
 					<div class="title-overlay">
-						<span><?php the_title(); ?></span>
+						<span><?php echo (get_post_meta(get_the_ID(), 'header_text', true) ?: get_the_title()); ?></span>
 					</div>
 				</a>
 			</h1>
