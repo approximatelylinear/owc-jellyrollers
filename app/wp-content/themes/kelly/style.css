@@ -533,7 +533,7 @@ a:active {
 
 .main-navigation, .main-navigation.toggled {
 	position: absolute;
-	top: 0;
+	top: 60px;
 	left: 0;
 	height: 60px;
 }
@@ -544,7 +544,7 @@ a:active {
 }
 .main-navigation .menu-toggle {
 	position: absolute;
-	top: 0;
+	top: -60px;
 	right: 0;
 	padding: 15px 10px;
 	z-index: 2;
@@ -556,7 +556,7 @@ a:active {
 
 .nav-menu,
 .menu {
-	margin-top: 60px;
+	/*margin-top: 60px;*/
 	background-color: #2f2f2f;
 	padding: 0 .5em;
 }
@@ -1222,6 +1222,9 @@ td#next {
 		display: inline-block;
 		margin: 0 20px 0 0;
 	}
+	.main-navigation, .main-navigation.toggled {
+		top: 90px;
+	}
 	.main-navigation, .site-branding, .header-background, .site-header, .site-title {
 		text-align: center;
 		height: 90px;
@@ -1239,7 +1242,7 @@ td#next {
 	}
 	.nav-menu,
 	.menu {
-		margin-top: 90px;
+		/*margin-top: 90px;*/
 		background-color: #fff;
 	}
 	.nav-menu li,
