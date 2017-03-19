@@ -29,12 +29,13 @@
 	<header id="masthead" class="site-header" role="banner"<?php echo $style; ?>>
 		<div class="header-background"></div>
 		<div class="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_theme_file_uri( 'images/logo-cbcc.jpg' ); ?>" alt="Chicago Baseball Cancer Charity" /></a></h1>
 		</div>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<h1 class="menu-toggle"><?php _e( 'Menu', 'kelly' ); ?></h1>
+			<a class="menu-toggle">
+				<img src="<?php echo get_theme_file_uri( 'images/menu-button.svg' ); ?>" alt="Menu" />
+			</a>
 			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'kelly' ); ?></a>
 
 			<?php

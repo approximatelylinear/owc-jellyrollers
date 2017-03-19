@@ -10,7 +10,7 @@
 	if ( ! container )
 		return;
 
-	button = container.getElementsByTagName( 'h1' )[0];
+	button = container.getElementsByClassName( 'menu-toggle' )[0];
 	if ( 'undefined' === typeof button )
 		return;
 
@@ -26,12 +26,13 @@
 		menu.className += ' nav-menu';
 
 	button.onclick = function() {
-		if ( -1 !== container.className.indexOf( 'toggled' ) )
+		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
+			console.log("Clicky");
 			container.className = container.className.replace( ' toggled', '' );
-		else
+		} else {
 			container.className += ' toggled';
+		}
 	};
-	
 	// Fix child menus for touch devices.
 	function fixMenuTouchTaps( container ) {
 		var touchStartFn,
