@@ -1254,7 +1254,7 @@ td#next {
 	}
 	.main-navigation li {
 		display: inline-block;
-		margin-right: 1.5em;
+		margin: 0 .75em;
 		position: relative;
 	}
 	.main-navigation a {
