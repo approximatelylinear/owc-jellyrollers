@@ -136,7 +136,7 @@ button,
 input,
 select,
 textarea {
-	color: #5f6d80;
+	color: #292929;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 16px;
 	font-size: 1.6rem;
@@ -147,11 +147,13 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	margin: 1em 0 0;
+	color: #585858
 }
 h1 {
 	font-family: 'Factoria', sans-serif;
 	font-weight: 700;
 	font-size: 1.75em;
+	color: #111111;
 }
 h2 {
 	font-size: 1.255em;
@@ -299,7 +301,7 @@ input[type="reset"],
 input[type="submit"] {
 	border: 0;
 	border-radius: 3px;
-	background: #f35955;
+	background: #d63838;
 	color: #fff;
 	cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
 	-webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
@@ -311,7 +313,7 @@ button:hover,
 html input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	background: #f3835d;
+	background: #c72e2e;
 }
 input[type="checkbox"],
 input[type="radio"] {
@@ -368,16 +370,16 @@ textarea {
 
 /* Links */
 a {
-	color: #f35955;
+	color: #51aaac;
 	text-decoration: none;
 }
 a:visited {
-	color: #f3835d;
+	color: #51aaac;
 }
 a:hover,
 a:focus,
 a:active {
-	color: #f3835d;
+	color: #51aaac;
 }
 
 /* Alignment */
@@ -457,7 +459,7 @@ a:active {
 ----------------------------------------------- */
 
 .main-navigation {
-	background: rgba(10,167,147,0.75);
+	background: #2f2f2f;
 	clear: both;
 	display: block;
 	text-align: left;
@@ -488,11 +490,16 @@ a:active {
 .main-navigation div > ul:first-child {
 	margin-left: 0;
 }
+.main-navigation li {
+	padding: 0 .5em;
+}
 .main-navigation a {
-	border-bottom: 1px solid #109987;
-	color: #eaedf1;
+	border-bottom: 1px solid #1f1f1f;
+
 	display: block;
-	padding: .75em;
+	font-family: Factoria;
+	font-weight: 700;
+	padding: .5em 0;
 	text-decoration: none;
 }
 .main-navigation a:hover {
@@ -515,7 +522,6 @@ a:active {
 		display: block;
 	}
 	.menu-toggle {
-		background: rgba(10,167,147,0.75);
 		color: #fff;
 		font-size: 1.25em;
 		margin: 0;
@@ -837,7 +843,8 @@ object {
 ----------------------------------------------- */
 
 .widget-areas {
-	background: #dae0e8;
+	background: #262626;
+	color: #ffffff;
 }
 .widget-areas .widget-area:nth-child(1):nth-last-child(2),
 .widget-areas .widget-area:nth-child(2):nth-last-child(1) {
@@ -858,6 +865,10 @@ object {
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 1.5em;
+}
+.widget a {
+	font-weight: 700;
+	color: #ffffff;
 }
 .widget ul {
 	list-style-type: none;
@@ -990,9 +1001,7 @@ td#next {
 	text-align: center;
 }
 .header-background {
-	background: rgba(6,156,136,0.75);
 	display: block;
-	opacity: 0.9;
 	position: absolute;
 		top: 0;
 		left: 0;
@@ -1032,11 +1041,16 @@ td#next {
 ----------------------------------------------- */
 
 .site-footer {
-	background: #5f6d80;
+	background: #262626;
 	color: #1d3037;
 	font-size: .8125em;
-	padding: 1.5em;
+	font-style: italic;
+	padding: 0 1.5em;
 	text-align: center;
+}
+.site-info {
+	padding: 1.5em 0;
+	border-top: 1px solid #191919;
 }
 .site-footer a,
 .site-info {
