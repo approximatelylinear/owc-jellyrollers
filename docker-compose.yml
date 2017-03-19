@@ -1,0 +1,40 @@
+# docker-compose version
+version: "3"
+# docker services
+services:
+  # wordpress container
+  wordpress:
+    # use wordpress image from Docker Hub
+    image: wordpress
+    # port mappings
+    ports:
+      # expose guest port 80 at host port 8080
+      - "8080:80"
+    # environment variables
+    environment:
+      # set DB password for wordpress
+      - WORDPRESS_DB_PASSWORD=temp
+      - SHELL=/bin/bash
+    # mounted volumes
+    volumes:
+      # map host path ./app to guest path /var/www/html
+      - ./app:/var/www/html
+    # set container dependencies (startup order)
+    depends_on:
+      # depends on mysql container being available before initializing
+      - mysql
+
+  # mysql container
+  mysql:
+    # user mariadb image from Docker Hub
+    image: mariadb
+    # environment variables
+    environment:
+      # set DB root password
+      - MYSQL_ROOT_PASSWORD=temp
+    # mounted volumes
+    volumes:
+      # map host path ./db to guest path /var/lib/mysql
+      - ./db:/var/lib/mysql
+    ports:
+      - "3306:3306"
