@@ -186,7 +186,7 @@ function donate_button($attr) {
         'label' => 'Donate',
     ), $attr));
 
-	return '<a href="https://squareup.com/store/chicago-baseball-cancer-charity" target="_blank"><button>'.$label.'</button></a>';
+	return '<a href="https://squareup.com/store/chicago-baseball-cancer-charity" target="_blank"><button class="donate-button">'.$label.'</button></a>';
 }
 
 /**
