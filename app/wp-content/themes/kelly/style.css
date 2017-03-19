@@ -583,11 +583,11 @@ a:active {
 	background-position: center center;
 	background-size: cover;
 }
-.has-post-thumbnail .entry-title .title-overlay, .entry-title .title-overlay {
+.entry-title .title-overlay {
 	padding: 2em 0;
 	background-color: rgba(81, 170, 172, .75); /* #51AAAC with some opacity */
 }
-.has-post-thumbnail .entry-title .title-overlay > span, .entry-title .title-overlay > span {
+.entry-title .title-overlay > span {
 	display: block;
 	color: #ffffff;
 	-ms-transform-origin: center center;
