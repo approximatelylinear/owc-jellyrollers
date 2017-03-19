@@ -1216,17 +1216,29 @@ td#next {
 		display: inline-block;
 		margin: 0 10px;
 	}
-	.main-navigation {
+	.main-navigation, .site-branding, .header-background, .site-header, .site-title {
 		text-align: center;
+		height: 90px;
+		box-shadow: none;
 	}
-	.main-navigation ul {
-		padding: .75em 0;
+	.site-title a img {
+		max-height: 90px;
 	}
 	.main-navigation .inactive-hamburger, .main-navigation .active-hamburger {
 		display: none;
 	}
 	.main-navigation ul {
 		display: block;
+		padding: 0;
+	}
+	.nav-menu {
+		margin-top: 90px;
+		background-color: #fff;
+	}
+	.nav-menu li {
+		text-transform: uppercase;
+		font-size: 1.2em;
+		padding: 0;
 	}
 	.nav-menu li:not(:first-child) {
 		border-top: 0;
@@ -1290,6 +1302,7 @@ td#next {
 	.hentry {
 		margin-left: 1.5em;
 		margin-right: 1.5em;
+		padding: 3em 1.5em;
 	}
 	.entry-title,
 	.page-title {
