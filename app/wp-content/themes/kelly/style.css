@@ -953,6 +953,11 @@ td#next {
 	text-align: right;
 }
 
+/* Pages widget in the footer */
+.widget.widget_pages .widget-title {
+	display: none;
+}
+
 
 /* 10.0 - Infinite Scroll
 ----------------------------------------------- */
