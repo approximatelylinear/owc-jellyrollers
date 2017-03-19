@@ -8,7 +8,14 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<h1 class="entry-title"><?php the_title(); ?></h1>
+		<h1
+			class="entry-title"
+			style="<?php echo has_post_thumbnail() ? 'background-image: url(' . get_the_post_thumbnail_url() . ');' : '' ?>"
+		>
+			<div class="title-overlay">
+				<span><?php the_title(); ?></span>
+			</div>
+		</h1>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
