@@ -557,6 +557,10 @@ a:active {
 .page-title {
 	margin: 0;
 	text-transform: uppercase;
+	-ms-transform-origin: center center;
+	    transform-origin: center center;
+	-ms-transform: rotate(-1.5deg);
+	    transform: rotate(-1.5deg);
 }
 .entry-title a,
 .entry-title a:visited,
