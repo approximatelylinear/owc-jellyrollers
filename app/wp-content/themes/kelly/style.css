@@ -1220,7 +1220,7 @@ td#next {
 	}
 	.widget li {
 		display: inline-block;
-		margin: 0 10px;
+		margin: 0 20px 0 0;
 	}
 	.main-navigation, .site-branding, .header-background, .site-header, .site-title {
 		text-align: center;
