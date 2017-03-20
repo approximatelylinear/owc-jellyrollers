@@ -76,8 +76,7 @@ function kelly_posted_on() {
 	$format = get_post_format();
 
 	if ( is_sticky() ) :
-		printf( __( '<span class="posted-on">Featured</span>', 'kelly' ),
-		);
+		printf( __( '<span class="posted-on">Featured</span>', 'kelly' ));
 	elseif ( $format && in_array( $format, $formats[0] ) ) :
 		printf( __( '<span class="entry-format">%1$s</span> <span class="posted-on">posted on %2$s</span>', 'kelly' ),
 			sprintf( '<a href="%1$s" title="%2$s">%3$s</a>',
