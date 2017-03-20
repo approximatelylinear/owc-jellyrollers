@@ -76,14 +76,9 @@ function kelly_posted_on() {
 	$format = get_post_format();
 
 	if ( is_sticky() ) :
-		printf( __( '<span class="posted-on">Featured</span><span class="byline"> by %1$s</span>', 'kelly' ),
-			sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s">%2$s</a></span>',
-				esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-				esc_html( get_the_author() )
-			)
-		);
+		printf( __( '<span class="posted-on">Featured</span>', 'kelly' ));
 	elseif ( $format && in_array( $format, $formats[0] ) ) :
-		printf( __( '<span class="entry-format">%1$s</span> <span class="posted-on">posted on %2$s</span><span class="byline"> by %3$s</span>', 'kelly' ),
+		printf( __( '<span class="entry-format">%1$s</span> <span class="posted-on">posted on %2$s</span>', 'kelly' ),
 			sprintf( '<a href="%1$s" title="%2$s">%3$s</a>',
 				esc_url( get_post_format_link( $format ) ),
 				esc_attr( sprintf( __( 'All %s posts', 'kelly' ), get_post_format_string( $format ) ) ),
@@ -92,21 +87,13 @@ function kelly_posted_on() {
 			sprintf( '<a href="%1$s" rel="bookmark">%2$s</a>',
 				esc_url( get_permalink() ),
 				$time_string
-			),
-			sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s">%2$s</a></span>',
-				esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-				esc_html( get_the_author() )
 			)
 		);
 	else :
-		printf( __( '<span class="posted-on">Posted on %1$s</span><span class="byline"> by %2$s</span>', 'kelly' ),
+		printf( __( '<span class="posted-on">Posted on %1$s</span>', 'kelly' ),
 			sprintf( '<a href="%1$s" rel="bookmark">%2$s</a>',
 				esc_url( get_permalink() ),
 				$time_string
-			),
-			sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s">%2$s</a></span>',
-				esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-				esc_html( get_the_author() )
 			)
 		);
 	endif;
