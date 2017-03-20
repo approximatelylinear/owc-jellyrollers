@@ -23,9 +23,6 @@ get_header(); ?>
 						elseif ( is_tag() ) :
 							single_tag_title();
 
-						elseif ( is_author() ) :
-							printf( __( 'Author: %s', 'kelly' ), '<span class="vcard">' . get_the_author() . '</span>' );
-
 						elseif ( is_day() ) :
 							printf( __( 'Day: %s', 'kelly' ), '<span>' . get_the_date() . '</span>' );
 
